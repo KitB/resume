@@ -5,4 +5,4 @@ TEMPLATE=${2-$DEFAULT_TEMPLATES}
 
 OUTPUT=${1%.md}.pdf
 
-python resume.py tex < $1 | pandoc --template=$TEMPLATE -H $DIR/header.tex -o $OUTPUT
+python $DIR/resume.py tex < $1 | pandoc --template=$TEMPLATE -H $DIR/header.tex -o $OUTPUT
