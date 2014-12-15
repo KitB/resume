@@ -9,4 +9,4 @@ TEMPLATE=${3-$DEFAULT_TEMPLATE}
 
 OUTPUT=${1%.md}.pdf
 
-python $DIR/resume.py tex < $1 | pandoc --latex-engine=xelatex --template=$TEMPLATE -H $HEADER -o $OUTPUT
+python $DIR/resume.py tex < $1 | pandoc --template=$TEMPLATE -H $HEADER -o $OUTPUT
